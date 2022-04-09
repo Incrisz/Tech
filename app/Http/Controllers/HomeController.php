@@ -24,7 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $birthdays = Member::whereRaw('MONTH(dob) = MONTH(NOW())')->get();
+        //$birthdays = Member::whereRaw('MONTH(dob) = MONTH(NOW())')->get();
+        $birthdays = Member::all();
         $members = Member::all();
         return view('backend.dashboard',compact('birthdays','members'));
     }
