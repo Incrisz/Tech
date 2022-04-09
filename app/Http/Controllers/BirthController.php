@@ -13,11 +13,7 @@ class BirthController extends Controller
      */
     public function index()
     {
-        //  $birthdays = Member::select('SELECT * from members WHERE MONTH(dob) = MONTH(NOW())');
-        $birthdays = Member::all();
-        // $birthdays = Member::whereRaw('MONTH(dob) = MONTH(NOW())')->get();
-        // $year = date("M"); 
-  
+         $birthdays = Member::all();
          return view('members.birthday',compact('birthdays'));
        
     }
