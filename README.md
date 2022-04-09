@@ -1,1 +1,3 @@
-php artisan db:seed --class=AdminUserSeeder
+php artisan db:seed --class=CreateAdminUserSeeder
+
+php artisan db:seed --class=PermissionTableSeeder
