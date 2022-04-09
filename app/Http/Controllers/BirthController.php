@@ -13,9 +13,7 @@ class BirthController extends Controller
      */
     public function index()
     {
-         $birthdays = Member::whereRaw('DAYOFYEAR(curdate()) <= DAYOFYEAR(dob) AND DAYOFYEAR(curdate())  >=  dayofyear(dob)')
-        ->orderByRaw('DAYOFYEAR(dob)')
-        ->get();
+         $birthdays = Member::select('SELECT * from members WHERE MONTH(dob) = MONTH(NOW())');
         
         // $birthdays = Member::whereRaw('MONTH(dob) = MONTH(NOW())')->get();
         // $year = date("M"); 
