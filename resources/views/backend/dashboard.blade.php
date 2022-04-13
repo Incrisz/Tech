@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content')
-
+<!-- test -->
 <div class="page-wrapper">
 			<div class="page-content">
 
