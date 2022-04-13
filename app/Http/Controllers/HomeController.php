@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Member;
+use App\Models\Love;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,10 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //$birthdays = Member::whereRaw('MONTH(dob) = MONTH(NOW())')->get();
-        $birthdays = Member::all();
+        $birthdays = Member::whereRaw('MONTH(dob) = MONTH(NOW())')->get();
+        // $birthdays = Member::all();
+        $loves = Love::whereRaw('MONTH(created_at) = MONTH(NOW())')->get();
         $members = Member::all();
-        return view('backend.dashboard',compact('birthdays','members'));
+        // $loves = Love::all();
+        return view('backend.dashboard',compact('birthdays','members','loves'));
     }
  
 }

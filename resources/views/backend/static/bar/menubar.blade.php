@@ -61,14 +61,14 @@
 										</div>
 										</a>
 										
-										<!-- <a class="" href="">
+									 <a class="" href="{{ route('love.index')}}">
 										<div class="col text-center">
 											<div class="app-box mx-auto bg-gradient-lush text-white"><i class='bx bx-play'></i>
 											</div>
-											<div class="app-title">Video</div>
+											<div class="app-title">Love-Seed</div>
 										</div>
 										</a>
-										<a class="" href="">
+										<!--	<a class="" href="">
 										<div class="col text-center">
 											<div class="app-box mx-auto bg-gradient-kyoto text-dark"><i class='bx bx-music'></i>
 											</div>

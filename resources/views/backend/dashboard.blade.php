@@ -33,7 +33,7 @@
 						<div class="card bg-transparent shadow-none mb-0">
 							<div class="card-body text-center">
 							   <p class="mb-1 text-white">Love Seed Generated This Month</p>  
-							   <h3 class="mb-3 text-white">#5000</h3>
+							   <h3 class="mb-3 text-white">₦{{ $loves->sum('amount') }}</h3>
 							   <!-- <p class="font-13 text-white"><span class="text-danger"><i class="lni lni-arrow-down"></i> 3.6%</span> vs last 7 days</p> -->
 							   <div id="chart3"></div>
 							</div>

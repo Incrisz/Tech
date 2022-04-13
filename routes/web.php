@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\BirthController;
+use App\Http\Controllers\LoveController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +39,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('products',ProductController::class);
     Route::resource('members',MemberController::class);
     Route::resource('birth',BirthController::class);
+    Route::resource('love',LoveController::class);
 
 Route::get('members/birthday', [App\Http\Controllers\MemberController::class, 'birthday'])->name('members.birthday');
 

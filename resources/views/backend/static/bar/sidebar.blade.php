@@ -40,6 +40,20 @@
 						
 					</ul>
 				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-book'></i>
+						</div>
+						<div class="menu-title">Love Seed</div>
+					</a>
+					<ul>
+						<li> <a href="{{ route('love.index')}}"><i class="bx bx-right-arrow-alt"></i>Love Seed Table</a>
+						</li>
+						<li> <a href="{{ route('love.create')}}"><i class="bx bx-right-arrow-alt"></i>Add New Seed</a>
+						</li>
+						
+					</ul>
+				</li>
 				
 
 			
